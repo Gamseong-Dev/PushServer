@@ -1,35 +1,35 @@
 package com.highluck.dto;
 
 public class LikeUserDTO {
-   public long userId;
+   public long user_Id;
 	public String name;
 	public long id;
-	public long feedId;
-	public String feedUserId;
+	public long feed_Id;
+	public String feed_User_Id;
 	
 	public long getUser_Id() {
-		return userId;
+		return user_Id;
 	}
 	public void setUser_Id(long user_Id) {
-		this.userId = user_Id;
+		this.user_Id = user_Id;
 	}
 	public long getFeed_Id() {
-		return feedId;
+		return feed_Id;
 	}
 	public void setFeed_Id(long feed_Id) {
-		this.feedId = feed_Id;
+		this.feed_Id = feed_Id;
 	}
 	public String getFeed_user_id() {
-		return feedUserId;
+		return feed_User_Id;
 	}
 	public void setFeed_user_id(String feed_user_id) {
-		this.feedUserId = feed_user_id;
+		this.feed_User_Id = feed_user_id;
 	}
 	public long getUser_id() {
-		return userId;
+		return user_Id;
 	}
 	public void setUser_id(long user_id) {
-		this.userId = user_id;
+		this.user_Id = user_id;
 	}
 	public String getName() {
 		return name;
@@ -44,10 +44,10 @@ public class LikeUserDTO {
 		this.id = id;
 	}
 	public long getFeed_id() {
-		return feedId;
+		return feed_Id;
 	}
 	public void setFeed_id(long feed_id) {
-		this.feedId = feed_id;
+		this.feed_Id = feed_id;
 	}
 	
 

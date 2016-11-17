@@ -2,11 +2,11 @@ package com.highluck.dto;
 
 public class AlarmDTO {
 	public long id;
-	public String userId;
+	public String user_Id;
 	public String contents;
-	public String sendTimestamp;
+	public String send_Timestamp;
 	public String type;
-	public long typeId;
+	public long type_Id;
 
 	
 	
@@ -22,29 +22,29 @@ public class AlarmDTO {
 		this.type = type;
 	}
 	public long getType_id() {
-		return typeId;
+		return type_Id;
 	}
 	public void setType_id(long type_id) {
-		this.typeId = type_id;
+		this.type_Id = type_id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
 	public String getSend_timestamp() {
-		return sendTimestamp;
+		return send_Timestamp;
 	}
 	public void setSend_timestamp(String send_timestamp) {
-		this.sendTimestamp = send_timestamp;
+		this.send_Timestamp = send_timestamp;
 	}
 	
 	public long getId() {
 		return id;
 	}
 	public String getUser_id() {
-		return userId;
+		return user_Id;
 	}
 	public void setUser_id(String user_id) {
-		this.userId = user_id;
+		this.user_Id = user_id;
 	}
 	public String getContents() {
 		return contents;
