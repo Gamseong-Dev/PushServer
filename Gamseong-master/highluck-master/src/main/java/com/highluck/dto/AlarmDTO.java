@@ -2,7 +2,7 @@ package com.highluck.dto;
 
 public class AlarmDTO {
 	public long id;
-	public String user_Id;
+	public String userId;
 	public String contents;
 	public String send_Timestamp;
 	public String type;
@@ -41,10 +41,10 @@ public class AlarmDTO {
 		return id;
 	}
 	public String getUser_id() {
-		return user_Id;
+		return userId;
 	}
 	public void setUser_id(String user_id) {
-		this.user_Id = user_id;
+		this.userId = user_id;
 	}
 	public String getContents() {
 		return contents;
