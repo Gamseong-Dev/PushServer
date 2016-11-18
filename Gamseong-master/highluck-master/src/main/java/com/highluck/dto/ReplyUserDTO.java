@@ -1,21 +1,21 @@
 package com.highluck.dto;
 
 public class ReplyUserDTO {
-	public String user_Id;
+	public String userId;
 	public String name;
 	public String contents;
 	public long id;
-	public long feed_Id;
-	public String feed_User_Id;
-	public String creation_Timestamp;
+	public long feedId;
+	public String feedUserId;
+	public String creationTimestamp;
 	
 	
 	
 	public String getUser_id() {
-		return user_Id;
+		return userId;
 	}
 	public void setUser_id(String user_id) {
-		this.user_Id = user_id;
+		this.userId = user_id;
 	}
 	public String getName() {
 		return name;
@@ -36,10 +36,10 @@ public class ReplyUserDTO {
 		this.id = id;
 	}
 	public long getFeed_id() {
-		return feed_Id;
+		return feedId;
 	}
 	public void setFeed_id(long feed_id) {
-		this.feed_Id = feed_id;
+		this.feedId = feed_id;
 	}
 	
 

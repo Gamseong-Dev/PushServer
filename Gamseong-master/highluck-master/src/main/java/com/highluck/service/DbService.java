@@ -29,7 +29,7 @@ public class DbService {
 			ArrayList<ReplyUserDTO> list = dbDAO.selectMainList(value);
 		for(int i=0; i<list.size(); i++){
 			AlarmDTO dto = new AlarmDTO();
-			dto.setUser_id(list.get(i).feed_User_Id);
+			dto.setUser_id(list.get(i).feedUserId);
 			dto.setContents(list.get(i).name+"님이 댓글을 남겼습니다. \n\n"+list.get(i).contents);
 			dto.setType("1");
 			dto.setType_id(value.getFeedId());
@@ -49,7 +49,7 @@ public class DbService {
 			ArrayList<LikeUserDTO> list = dbDAO.selectMainList2(value);
 			for(int i=0; i<list.size(); i++){
 				AlarmDTO dto = new AlarmDTO();
-				dto.setUser_id(list.get(i).feed_User_Id);
+				dto.setUser_id(list.get(i).feedUserId);
 				dto.setContents(list.get(i).name+"님이 좋아요를 눌렀습니다.");
 				dto.setType("1");
 				dto.setType_id(value.getFeedId());
@@ -71,8 +71,8 @@ public class DbService {
 			ArrayList<DbDTO> list = dbDAO.selectMainList3(value);
 			for(int i=0; i<list.size(); i++){
 				AlarmDTO dto = new AlarmDTO();
-				System.out.println(list.get(i). recive_User_Id);
-				dto.setUser_id(list.get(i). recive_User_Id);
+				System.out.println(list.get(i). reciveUserId);
+				dto.setUser_id(list.get(i). reciveUserId);
 				dto.setContents(list.get(i).contents);
 				dto.setType("2");
 				dto.setType_id(list.get(i).id);

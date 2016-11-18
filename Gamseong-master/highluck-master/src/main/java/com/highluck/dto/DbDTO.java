@@ -3,31 +3,31 @@ package com.highluck.dto;
 public class DbDTO {
 	
 	public int id;
-	public String user_Id;
+	public String userId;
 	public String name;
-	public String  recive_User_Id;
+	public String  reciveUserId;
 	public String contents;
 	public String  status;
-	public String creation_Timestamp;
-	public int feed_Id;
+	public String creationTimestamp;
+	public int feedId;
 
 	public String getCreation_timestamp() {
-		return creation_Timestamp;
+		return creationTimestamp;
 	}
 	public int getFeed_id() {
-		return feed_Id;
+		return feedId;
 	}
 	public void setFeed_id(int feed_id) {
-		this.feed_Id = feed_id;
+		this.feedId = feed_id;
 	}
 	public void setCreation_timestamp(String creation_timestamp) {
-		this.creation_Timestamp = creation_timestamp;
+		this.creationTimestamp = creation_timestamp;
 	}
 	public String getRecive_user_id() {
-		return recive_User_Id;
+		return reciveUserId;
 	}
 	public void setRecive_user_id(String recive_user_id) {
-		this.recive_User_Id = recive_user_id;
+		this.reciveUserId = recive_user_id;
 	}
 	public String getContents() {
 		return contents;
@@ -48,10 +48,10 @@ public class DbDTO {
 		this.id = id;
 	}
 	public String getUser_id() {
-		return user_Id;
+		return userId;
 	}
 	public void setUser_id(String user_id) {
-		this.user_Id = user_id;
+		this.userId = user_id;
 	}
 	public String getName() {
 		return name;

@@ -2,9 +2,9 @@ package com.highluck.dto;
 
 public class ReplyDTO {
 	public long id;
-	public long feed_Id;
+	public long feedId;
 	public String contents;
-	public String creation_Timestamp;
+	public String creationTimestamp;
 	public long getId() {
 		return id;
 	}
@@ -12,10 +12,10 @@ public class ReplyDTO {
 		this.id = id;
 	}
 	public long getFeed_Id() {
-		return feed_Id;
+		return feedId;
 	}
 	public void setFeed_Id(long feed_Id) {
-		this.feed_Id = feed_Id;
+		this.feedId = feed_Id;
 	}
 	public String getContents() {
 		return contents;
@@ -24,10 +24,10 @@ public class ReplyDTO {
 		this.contents = contents;
 	}
 	public String getCreation_Timestamp() {
-		return creation_Timestamp;
+		return creationTimestamp;
 	}
 	public void setCreation_Timestamp(String creation_Timestamp) {
-		this.creation_Timestamp = creation_Timestamp;
+		this.creationTimestamp = creation_Timestamp;
 	}
 	public String getUser_Id() {
 		return user_Id;

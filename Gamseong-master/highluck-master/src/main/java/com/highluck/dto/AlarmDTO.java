@@ -4,9 +4,9 @@ public class AlarmDTO {
 	public long id;
 	public String userId;
 	public String contents;
-	public String send_Timestamp;
+	public String sendTimestamp;
 	public String type;
-	public long type_Id;
+	public long typeId;
 
 	
 	
@@ -22,19 +22,19 @@ public class AlarmDTO {
 		this.type = type;
 	}
 	public long getType_id() {
-		return type_Id;
+		return typeId;
 	}
 	public void setType_id(long type_id) {
-		this.type_Id = type_id;
+		this.typeId = type_id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
 	public String getSend_timestamp() {
-		return send_Timestamp;
+		return sendTimestamp;
 	}
 	public void setSend_timestamp(String send_timestamp) {
-		this.send_Timestamp = send_timestamp;
+		this.sendTimestamp = send_timestamp;
 	}
 	
 	public long getId() {
