@@ -4,7 +4,7 @@
      
       <select id="selectList4" resultType="com.highluck.dto.AlarmDTO"  parameterType= "com.highluck.dto.DbValue">
         <![CDATA[
-  SELECT * FROM ALARM WHERE USER_ID='${user_id}';          
+  SELECT * FROM ALARM WHERE USER_ID='${userId}';          
         ]]>
     </select>     
 </mapper>

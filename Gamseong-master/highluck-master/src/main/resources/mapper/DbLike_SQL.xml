@@ -10,7 +10,7 @@
 	( SELECT name 
 	FROM USER
 	where id = C.user_id) 
-	AS name ,C.feed_id,B.user_id as feed_user_id
+	AS name ,C.feed_id,B.user_id as feedUserId
 FROM FEED B
 JOIN LIKE_INFO C
 ON B.id = C.feed_id

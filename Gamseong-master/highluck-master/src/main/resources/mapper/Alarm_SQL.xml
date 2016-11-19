@@ -6,7 +6,7 @@
       <insert id="insert" parameterType= "com.highluck.dto.AlarmDTO">
       
         INSERT INTO ALARM(USER_ID, CONTENTS, SEND_TIMESTAMP, STATUS, TYPE,TYPE_ID)
-         VALUES ('${user_id}' , '${contents}', now(), 'Y','${type}','${type_id}')     
+         VALUES ('${userId}' , '${contents}', now(), 'Y','${type}','${typeId}')     
         
     </insert>     
 </mapper>

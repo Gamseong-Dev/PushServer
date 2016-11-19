@@ -12,7 +12,7 @@
    where id = C.user_id) AS name , 
    C.CONTENTS,
    C.CREATION_TIMESTAMP, 
-   B.user_id AS feed_user_id
+   B.user_id AS feedUserId
 FROM FEED B
 JOIN REPLY C
 ON B.id = C.feed_id

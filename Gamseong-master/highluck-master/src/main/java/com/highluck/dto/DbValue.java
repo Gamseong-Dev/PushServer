@@ -4,13 +4,37 @@ public class DbValue {
 
 	private long feedId;
 	private String reciveUserId;
-	private String useId;
+	private String userId;
     private long id;
     private String motherId;
 
 
 
 	
+
+	public String getReciveUserId() {
+		return reciveUserId;
+	}
+
+	public void setReciveUserId(String reciveUserId) {
+		this.reciveUserId = reciveUserId;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getMotherId() {
+		return motherId;
+	}
+
+	public void setMotherId(String motherId) {
+		this.motherId = motherId;
+	}
 
 	public long getId() {
 		return id;
@@ -20,13 +44,7 @@ public class DbValue {
 		this.id = id;
 	}
 
-	public String getUser_id() {
-		return useId;
-	}
-
-	public void setUser_id(String user_id) {
-		this.useId = user_id;
-	}
+	
 
 	public String getRecive_user_id() {
 		return reciveUserId;

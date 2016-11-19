@@ -5,7 +5,7 @@
      
       <select id="selectList3" resultType="com.highluck.dto.DbDTO"  parameterType= "com.highluck.dto.DbValue">
         <![CDATA[
-  SELECT * FROM MESSAGE WHERE RECIVE_USER_ID='${recive_user_id}';          
+  SELECT * FROM MESSAGE WHERE RECIVE_USER_ID='${reciveUserId}';          
         ]]>
     </select>     
 </mapper>
