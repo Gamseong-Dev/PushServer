@@ -50,5 +50,4 @@ public class LikeUserDTO {
 		this.feedId = feed_id;
 	}
 	
-
 }
