@@ -9,8 +9,15 @@ public class AdminDTO {
 	public String replyCreateTime;
 	public String feedCreateTime;
 	public String feedUserId;
+	public String LocationName;
 	
 	
+	public String getLocationName() {
+		return LocationName;
+	}
+	public void setLocationName(String locationName) {
+		LocationName = locationName;
+	}
 	public String getReplyUserId() {
 		return replyUserId;
 	}

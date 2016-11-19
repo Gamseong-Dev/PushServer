@@ -6,6 +6,7 @@ public class DbValue {
 	private String reciveUserId;
 	private String useId;
     private long id;
+    private String motherId;
 
 
 

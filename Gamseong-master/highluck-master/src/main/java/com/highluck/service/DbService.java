@@ -97,7 +97,24 @@ public class DbService {
 	
 	
 	public ArrayList<AdminDTO> findAllByUserId6(DbValue value) throws Exception{
-		return dbDAO.selectMainList6(value);
+try {
+			
+			ArrayList<AdminDTO> list = dbDAO.selectMainList6(value);
+			for(int i=0; i<list.size(); i++){
+				AlarmDTO dto = new AlarmDTO();
+				dto.setUser_id(list.get(i).replyUserId);
+				dto.setContents(list.get(i).name+"님, "+list.get(i).LocationName+"에 새로운 이벤트 소식이 도착하였습니다.");
+				dto.setType("1");
+				dto.setType_id(value.getFeedId());
+				alarmDAO.insert(dto);
+			}
+			
+			return list;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 
