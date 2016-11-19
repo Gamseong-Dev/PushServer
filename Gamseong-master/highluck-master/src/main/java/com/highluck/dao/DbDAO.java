@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import com.highluck.common.AbstractDAO;
 import com.highluck.dao.DbDAO;
+import com.highluck.dto.AdminDTO;
 import com.highluck.dto.AlarmDTO;
 import com.highluck.dto.DbDTO;
 import com.highluck.dto.DbValue;
@@ -36,6 +37,11 @@ public class DbDAO extends AbstractDAO{
 	@SuppressWarnings("unchecked")
 	public ArrayList<AlarmDTO> selectMainList5(DbValue value) throws Exception{
         return (ArrayList<AlarmDTO>)selectList("alarm1.update", value);
+   
+	}
+	@SuppressWarnings("unchecked")
+	public ArrayList<AdminDTO> selectMainList6(DbValue value) throws Exception{
+        return (ArrayList<AdminDTO>)selectList("List6.selectList6", value);
    
 	}
 }

@@ -47,5 +47,10 @@ public class dbController {
 	public void findAllByUserId5(@ModelAttribute DbValue value, HttpServletResponse response) throws Exception{
 	   System.out.println("성공!");
 	   Json.JsonSerialize().ReturnJSON(response, dbService.findAllByUserId5(value)); }
+	
+	@RequestMapping(value="/feed6", method = RequestMethod.GET)
+	public void findAllByUserId6(@ModelAttribute DbValue value, HttpServletResponse response) throws Exception{
+	   System.out.println("성공!");
+	   Json.JsonSerialize().ReturnJSON(response, dbService.findAllByUserId6(value)); }
 
 }

@@ -14,6 +14,7 @@ import com.highluck.dto.Feed;
 import com.highluck.dto.LikeUserDTO;
 import com.highluck.dto.ReplyUserDTO;
 import com.highluck.dto.UserValue;
+import com.highluck.dto.AdminDTO;
 import com.highluck.dto.AlarmDTO;
 
 @Service
@@ -92,6 +93,11 @@ public class DbService {
 	
 	public ArrayList<AlarmDTO> findAllByUserId5(DbValue value) throws Exception{
 		return dbDAO.selectMainList5(value);
+	}
+	
+	
+	public ArrayList<AdminDTO> findAllByUserId6(DbValue value) throws Exception{
+		return dbDAO.selectMainList6(value);
 	}
 
 
